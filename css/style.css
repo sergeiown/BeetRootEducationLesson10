@@ -5,26 +5,64 @@ body {
   font-family: "Lato", sans-serif;
   margin: 0;
   min-height: 100%;
-  background-color: rgb(255, 255, 255);
+  background-color: white;
 }
 .container {
   margin-left: auto;
   margin-right: auto;
   max-width: 1440px;
 }
+
+/* ===== Header ===== */
 header {
   display: flex;
-  flex-wrap: wrap;
+  flex-wrap: nowrap;
   flex-direction: row;
   justify-content: space-around;
-  align-items: auto;
+  align-items: center;
   align-content: start;
+  border-bottom: 1px solid #bdbdbd;
 }
 header > * {
   flex: 0 0 auto;
   margin: 5px;
 }
+.header__navigation_list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+}
+.header__navigation_list > li {
+  flex: 0 0 auto;
+  margin: 30px;
+}
+.header__navigation_list * {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.header__navigation_list *:hover a {
+  color: #18b5dc;
+}
+.header__button {
+  padding: 10px 20px;
+  background-color: white;
+  width: 130px;
+  height: 42px;
+  border: 1px solid #3c3c3c;
+  text-transform: uppercase;
+}
+.header__button:hover {
+  background-color: #18b5dc;
+  color: white;
+  border-color: #18b5dc;
+  cursor: pointer;
+}
 
+/* ===== Main ===== */
 main {
   display: flex;
   flex-wrap: wrap;
@@ -32,12 +70,40 @@ main {
   justify-content: center;
   align-items: center;
   align-content: center;
+  background: #f6f6f6;
 }
 main > * {
   flex: 0 0 auto;
   margin: 5px;
+  text-align: center;
+}
+.main__text > h1 {
+  font-size: 36px;
+  text-transform: uppercase;
+}
+.main__text > hr {
+  background-color: #dddbdb;
+  width: 45px;
+  height: 4px;
+  color: #dddbdb;
+  border: none;
+  margin: 20px auto;
+}
+.main__cards_list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+}
+.main__cards_list > li {
+  flex: 0 0 auto;
+  margin: 5px;
 }
 
+/* ===== Footer ===== */
 footer {
   display: flex;
   flex-wrap: wrap;
@@ -49,4 +115,46 @@ footer {
 footer > * {
   flex: 0 0 auto;
   margin: 5px;
+}
+.footer__navigation_list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+}
+.footer__navigation_list > li {
+  flex: 0 0 auto;
+  margin: 30px;
+}
+.footer__navigation_list * {
+  text-transform: uppercase;
+  text-decoration: none;
+}
+.footer__navigation_list *:hover a {
+  color: #18b5dc;
+}
+
+.footer__social_list {
+  display: flex;
+  flex-wrap: nowrap;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  align-content: center;
+  list-style: none;
+}
+.footer__social_list > li {
+  flex: 0 0 auto;
+  margin: 30px;
+}
+.footer__social_list * {
+  text-decoration: none;
+}
+
+.footer__social_list > li:hover {
+  background-color: #18b5dc;
+  cursor: pointer;
 }
