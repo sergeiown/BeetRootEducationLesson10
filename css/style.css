@@ -1,3 +1,6 @@
+* {
+  transition: all 0.5s ease;
+}
 html {
   height: 100%;
 }
@@ -88,6 +91,12 @@ main > * {
   color: #dddbdb;
   border: none;
   margin: 20px auto;
+}
+.main__text > p {
+  width: 570px;
+  font-size: 16px;
+  line-height: 24px;
+  color: #3c3c3c;
 }
 .main__cards_list {
   display: flex;
