@@ -166,16 +166,16 @@ body {
 
 /* ================Верхние изображения================= */
 #JohnHandson {
-  background-image: url("/img/john.png");
+  background-image: url("../img/john.png");
 }
 #AlexCutter {
-  background-image: url("/img/alex.png");
+  background-image: url("../img/alex.png");
 }
 #ElenaSimpson {
-  background-image: url("/img/elena.png");
+  background-image: url("../img/elena.png");
 }
 #LilyAllen {
-  background-image: url("/img/lily.png");
+  background-image: url("../img/lily.png");
 }
 
 .person__cell_social {
@@ -279,45 +279,45 @@ body {
 .footer__social_list_twitter {
   width: 43px;
   height: 42px;
-  background-image: url("/img/twitterblue.svg");
+  background-image: url("../img/twitterblue.svg");
 }
 .footer__social_list_twitter:hover {
-  background-image: url("/img/twitterwhite.svg");
+  background-image: url("../img/twitterwhite.svg");
   cursor: pointer;
 }
 .footer__social_list_facebook {
   width: 43px;
   height: 42px;
-  background-image: url("/img/facebookblue.svg");
+  background-image: url("../img/facebookblue.svg");
 }
 .footer__social_list_facebook:hover {
-  background-image: url("/img/facebookwhite.svg");
+  background-image: url("../img/facebookwhite.svg");
   cursor: pointer;
 }
 .footer__social_list_instagram {
   width: 43px;
   height: 42px;
-  background-image: url("/img/instagramblue.svg");
+  background-image: url("../img/instagramblue.svg");
 }
 .footer__social_list_instagram:hover {
-  background-image: url("/img/instagramwhite.svg");
+  background-image: url("../img/instagramwhite.svg");
   cursor: pointer;
 }
 .footer__social_list_linkedin {
   width: 43px;
   height: 42px;
-  background-image: url("/img/linkedinblue.svg");
+  background-image: url("../img/linkedinblue.svg");
 }
 .footer__social_list_linkedin:hover {
-  background-image: url("/img/linkedinwhite.svg");
+  background-image: url("../img/linkedinwhite.svg");
   cursor: pointer;
 }
 .footer__social_list_telegram {
   width: 43px;
   height: 42px;
-  background-image: url("/img/instagramblue.svg");
+  background-image: url("../img/instagramblue.svg");
 }
 .footer__social_list_telegram:hover {
-  background-image: url("/img/instagramwhite.svg");
+  background-image: url("../img/instagramwhite.svg");
   cursor: pointer;
 }
