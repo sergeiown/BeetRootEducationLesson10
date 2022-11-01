@@ -80,11 +80,16 @@ body {
 .main > * {
   flex: 0 0 auto;
   margin: 5px;
+}
+.main__text {
+  width: 1170px;
   text-align: center;
 }
 .main__text > h1 {
-  font-size: 36px;
+  font-size: 34px;
+  line-height: 41px;
   text-transform: uppercase;
+  margin-top: 150px;
 }
 .main__text > hr {
   background-color: #dddbdb;
@@ -92,14 +97,21 @@ body {
   height: 4px;
   color: #dddbdb;
   border: none;
-  margin: 20px auto;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 40px;
 }
 .main__text > p {
   width: 570px;
+  height: 42px;
+  margin-left: auto;
+  margin-right: auto;
   font-size: 16px;
   line-height: 24px;
   color: #3c3c3c;
 }
+
+/* ================В кдассе main используем смену цвета svg================= */
 .main__cards_list {
   display: flex;
   flex-wrap: nowrap;
@@ -110,9 +122,100 @@ body {
   list-style: none;
   padding-right: 40px;
 }
+
 .main__cards_list > li {
   flex: 0 0 auto;
   margin: 5px;
+}
+
+.main__cards_list-person {
+  margin: 15px;
+  position: relative;
+}
+
+.person__photo {
+  margin-bottom: 20px;
+}
+
+.person__name {
+  text-align: start;
+  font-size: 18px;
+  font-weight: 700;
+  color: #282528;
+}
+
+.person__position {
+  color: #646464;
+  text-align: start;
+  font-size: 18px;
+  font-weight: 300;
+}
+
+.person__cell {
+  position: relative;
+  width: 270px;
+  height: 270px;
+  margin-bottom: 20px;
+}
+
+.person__cell_photo {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+}
+
+/* ================Верхние изображения================= */
+#JohnHandson {
+  background-image: url("/img/john.png");
+}
+#AlexCutter {
+  background-image: url("/img/alex.png");
+}
+#ElenaSimpson {
+  background-image: url("/img/elena.png");
+}
+#LilyAllen {
+  background-image: url("/img/lily.png");
+}
+
+.person__cell_social {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  display: flex;
+  background: #18b5dc;
+  justify-content: center;
+  align-items: center;
+}
+
+.person__cell_social_icon {
+  display: block;
+  height: 22px;
+  width: 22px;
+  background-color: #5dcbe6;
+  padding: 12px;
+  margin: 4px;
+}
+
+.person__cell_social path {
+  fill: white;
+}
+
+.main__cards_list-person:hover .person__cell_photo {
+  transition: all 0.7s ease;
+  opacity: 0%;
+  visibility: hidden;
+  /* display: none;  - не позволяет снизить прозрачность медленно, не подходит*/
+}
+
+.person__cell_social_icon:hover,
+.person__cell_social_icon > svg:hover {
+  background-color: white;
+  cursor: pointer;
+}
+
+.person__cell_social_icon:hover path {
+  fill: #18b5dc;
 }
 
 /* ===== Footer ===== */
@@ -154,6 +257,7 @@ body {
   color: #18b5dc;
 }
 
+/* ================В классе footer используем svg как background================ */
 .footer__social_list {
   display: flex;
   justify-content: space-between;
