@@ -76,6 +76,7 @@ body {
   align-items: center;
   align-content: center;
   background: #f6f6f6;
+  height: 833px;
 }
 .main > * {
   flex: 0 0 auto;
